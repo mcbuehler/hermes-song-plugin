@@ -1,0 +1,6 @@
+name: song-generator
+version: "1.0"
+description: >
+  Restricted tool that generates a song via a local HeartMuLa install.
+  Exposes exactly one tool (generate_song) and nothing else - no terminal,
+  no filesystem browsing, no arbitrary command execution.
