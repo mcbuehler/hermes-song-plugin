@@ -25,7 +25,7 @@ from pathlib import Path
 
 # --- Fixed, operator-controlled paths (set these once for your machine) ---
 # Override via environment if you don't want to hardcode paths in the plugin.
-HEARTLIB_DIR = Path(os.environ.get("HEARTMULA_HEARTLIB_DIR", "/home/youruser/heartlib"))
+HEARTLIB_DIR = Path(os.environ.get("HEARTMULA_HEARTLIB_DIR", "/home/buehlmar/data/local/projects/playground/heartlib"))
 VENV_PYTHON = Path(os.environ.get("HEARTMULA_VENV_PYTHON", str(HEARTLIB_DIR / ".venv" / "bin" / "python")))
 GEN_SCRIPT = HEARTLIB_DIR / "examples" / "run_music_generation.py"
 MODEL_PATH = Path(os.environ.get("HEARTMULA_MODEL_PATH", str(HEARTLIB_DIR / "ckpt")))
@@ -33,7 +33,7 @@ MODEL_VERSION = os.environ.get("HEARTMULA_MODEL_VERSION", "3B")
 OUTPUT_DIR = Path(os.environ.get("HEARTMULA_OUTPUT_DIR", str(HEARTLIB_DIR / "assets" / "generated")))
 MAX_AUDIO_MS = int(os.environ.get("HEARTMULA_MAX_AUDIO_MS", "240000"))  # 4 min default
 GEN_TIMEOUT_S = int(os.environ.get("HEARTMULA_GEN_TIMEOUT_S", "900"))   # 15 min hard cap
-LAZY_LOAD = os.environ.get("HEARTMULA_LAZY_LOAD", "true")
+LAZY_LOAD = os.environ.get("HEARTMULA_LAZY_LOAD", "false")
 
 # Basic sanity limits so nobody can DoS the GPU box via giant inputs.
 MAX_LYRICS_CHARS = 6000
