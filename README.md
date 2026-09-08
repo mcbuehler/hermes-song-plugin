@@ -36,4 +36,4 @@ hermes gateway restart   # or: hermes gateway start
 | `HEARTMULA_OUTPUT_DIR` | `$HEARTLIB_DIR/assets/generated` |
 | `HEARTMULA_MAX_AUDIO_MS` | `240000` (4 min) |
 | `HEARTMULA_GEN_TIMEOUT_S` | `900` (15 min) |
-| `HEARTMULA_LAZY_LOAD` | `true` |
+| `HEARTMULA_LAZY_LOAD` | `false` |
